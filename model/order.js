@@ -90,11 +90,11 @@ const pickupAddressSchema = new mongoose.Schema({
   });
 
 const orderSchema = new mongoose.Schema({
-  orderNumber: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  // orderNumber: {
+  //   type: String,
+  //   required: true,
+  //   unique: true,
+  // },
 
   customerName: {
     type: String,
