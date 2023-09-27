@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import router from "./routes/user-routes.js";
 import oRouter from "./routes/order-routes.js";
+import rRouter from "./routes/return-routes.js";
 
 const app = express();
 const port = 3050;
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/users", router);
 app.use("/api/orders", oRouter);
+app.use("/api/returns",rRouter)
 
 // app.use("api/user",router)
 // app.use("/api", (req, res, next) => {

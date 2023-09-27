@@ -1,19 +1,19 @@
 import express from "express";
-import Order from "../model/order.js";
+import _return from "../model/return.js";
 
-export const createOrder = async (req, res, next) => {
+export const createReturn = async (req, res, next) => {
   const { customerName, customerEmail, shippingAddress } = req.body;
 
   try {
-    const newOrder = new Order({
+    const newReturn = new _return({
       customerName,
       customerEmail,
       shippingAddress,
     });
 
-    await newOrder.save();
+    await newReturn.save();
 
-    return res.status(201).json({ order: newOrder });
+    return res.status(201).json({ _return: newReturn });
   } catch (err) {
     console.error(err);
     return res
@@ -22,42 +22,42 @@ export const createOrder = async (req, res, next) => {
   }
 };
 
-export const getAllOrders = async (req, res, next) => {
+export const getAllReturn = async (req, res, next) => {
   try {
-    const orders = await Order.find();
-    return res.status(200).json({ orders });
+    const newreturn = await _return.find();
+    return res.status(200).json({ newreturn });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Error fetching orders." });
   }
 };
 
-export const updateOrder = async (req, res, next) => {
+export const updateReturn = async (req, res, next) => {
   const {
     customerName,
     customerEmail,
     shippingAddress,
     orderDetails,
     packageDetails,
-    pickupAddress,
+    warehouseAddress,
   } = req.body;
-  const orderId = req.params.id;
-  let newOrders;
+  const returnId = req.params.id;
+  let newReturn;
 
   try {
-    newOrders = await Order.findByIdAndUpdate(orderId, {
+    newReturn = await _return.findByIdAndUpdate(returnId, {
       customerName,
       customerEmail,
       shippingAddress,
       orderDetails,
       packageDetails,
-      pickupAddress,
+      warehouseAddress,
     });
   } catch (err) {
     return console.log(err);
   }
-  if (!newOrders) {
+  if (!newReturn) {
     return res.status(500).json({ message: "Unable to update the blog!" });
   }
-  return res.status(200).json({ newOrders });
+  return res.status(200).json({ newReturn });
 };
