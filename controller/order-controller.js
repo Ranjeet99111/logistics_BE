@@ -13,7 +13,7 @@ export const createOrder = async (req, res, next) => {
 
     await newOrder.save();
 
-    return res.status(201).json({ order: newOrder });
+    return res.status(201).json(newOrder );
   } catch (err) {
     console.error(err);
     return res

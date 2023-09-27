@@ -13,7 +13,7 @@ export const createReturn = async (req, res, next) => {
 
     await newReturn.save();
 
-    return res.status(201).json({ _return: newReturn });
+    return res.status(201).json( newReturn );
   } catch (err) {
     console.error(err);
     return res
