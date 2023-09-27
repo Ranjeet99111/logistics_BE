@@ -3,6 +3,7 @@ import _return from "../model/return.js";
 
 import {
   createReturn,
+  deleteReturn,
   getAllReturn,
   getReturnById,
   updateReturn,
@@ -14,5 +15,6 @@ rRouter.post("/", createReturn);
 rRouter.get("/", getAllReturn);
 rRouter.put("/:id", updateReturn);
 rRouter.get("/:id", getReturnById);
+rRouter.delete("/:id", deleteReturn);
 
 export default rRouter;

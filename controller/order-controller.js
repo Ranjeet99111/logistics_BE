@@ -47,6 +47,22 @@ export const getOrderById = async (req, res, next) => {
     return res.status(500).json({ message: "Error fetching order by ID" });
   }
 };
+export const deleteOrder = async (req, res, next) => {
+  const orderId = req.params.id;
+
+  try {
+    const order = await Order.findByIdAndRemove(orderId);
+
+    if (!order) {
+      return res.status(404).json({ message: "Order not found" });
+    }
+
+    return res.status(200).json({message:"successfully deleted"} );
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Error fetching order by ID" });
+  }
+};
 
 
 export const updateOrder = async (req, res, next) => {
