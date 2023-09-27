@@ -25,7 +25,7 @@ export const createOrder = async (req, res, next) => {
 export const getAllOrders = async (req, res, next) => {
   try {
     const orders = await Order.find();
-    return res.status(200).json({ orders });
+    return res.status(200).json( orders );
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Error fetching orders." });
@@ -41,7 +41,7 @@ export const getOrderById = async (req, res, next) => {
       return res.status(404).json({ message: "Order not found" });
     }
 
-    return res.status(200).json({ order });
+    return res.status(200).json(order );
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Error fetching order by ID" });
@@ -76,5 +76,5 @@ export const updateOrder = async (req, res, next) => {
   if (!newOrders) {
     return res.status(500).json({ message: "Unable to update the blog!" });
   }
-  return res.status(200).json({ newOrders });
+  return res.status(200).json(newOrders );
 };

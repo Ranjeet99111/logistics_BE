@@ -25,7 +25,7 @@ export const createReturn = async (req, res, next) => {
 export const getAllReturn = async (req, res, next) => {
   try {
     const newreturn = await _return.find();
-    return res.status(200).json({ newreturn });
+    return res.status(200).json(newreturn );
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Error fetching orders." });
@@ -42,7 +42,7 @@ export const getReturnById = async (req, res, next) => {
       return res.status(404).json({ message: "Order not found" });
     }
 
-    return res.status(200).json({ newreturn });
+    return res.status(200).json( newreturn );
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Error fetching order by ID" });
@@ -76,5 +76,5 @@ export const updateReturn = async (req, res, next) => {
   if (!newReturn) {
     return res.status(500).json({ message: "Unable to update the blog!" });
   }
-  return res.status(200).json({ newReturn });
+  return res.status(200).json(newReturn );
 };
