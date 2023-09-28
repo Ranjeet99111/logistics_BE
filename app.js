@@ -39,7 +39,7 @@ app.get("/readFile", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://rnjtydv9:WevHwplyTBDfr3Cy@unknown.ritibzx.mongodb.net/"
+    // "mongodb+srv://rnjtydv9:WevHwplyTBDfr3Cy@unknown.ritibzx.mongodb.net/"
   )
   .then(() =>
     app.listen(port, () => console.log(`server is running on port no: ${port}`))
