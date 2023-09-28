@@ -5,6 +5,8 @@ import router from "./routes/user-routes.js";
 import oRouter from "./routes/order-routes.js";
 import rRouter from "./routes/return-routes.js";
 
+import fs from "fs";
+
 const app = express();
 const port = 3050;
 
@@ -13,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/users", router);
 app.use("/api/orders", oRouter);
-app.use("/api/returns",rRouter)
+app.use("/api/returns", rRouter);
 
 // app.use("api/user",router)
 // app.use("/api", (req, res, next) => {
@@ -22,6 +24,18 @@ app.use("/api/returns",rRouter)
 // });
 
 // "mongodb+srv://ryadav:ibrIoy8smrNHeRBf@clustertodo.jfkxu97.mongodb.net/?retryWrites=true&w=majority"
+
+app.get("/readFile", (req, res) => {
+  fs.readFile("read.txt", "utf8", (err, data) => {
+    if (err) {
+      console.error("Error reading file:", err);
+      res.status(500).json({ error: "Error reading file" });
+    } else {
+      const parsedData = JSON.parse(data);
+      res.json(parsedData);
+    }
+  });
+});
 
 mongoose
   .connect(

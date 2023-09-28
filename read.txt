@@ -1,0 +1,1043 @@
+[
+    {
+        "id": 1,
+        "name": "AMAZON_IN",
+        "code": "AZ",
+        "type": "Marketplace",
+        "description": "Amazon.in MarketPlace Integration",
+        "logo": "amazon_in.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text",
+                    "value": "Amazon"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Amazon India API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "seller_id",
+                        "name": "Merchant Id",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "mws_auth_token",
+                        "name": "MWS Auth Token",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "marketplace_id",
+                        "name": "Marketplace Id",
+                        "placeholder": "",
+                        "value": "A21TJRUUN4KGV"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 2,
+        "name": "KARTROCKET",
+        "code": "KR",
+        "type": "Carts",
+        "description": "KartRocket Cart Integration",
+        "logo": "kartrocket.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "COD Confirmed,ePayment Received",
+                    "type": "text",
+                    "value": "COD Confirmed,ePayment Received"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "KartRocket API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "api_key",
+                        "name": "API Key",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://api.kartrocket.co without ending slash \"/\""
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 4,
+        "name": "MANUAL",
+        "code": "CS",
+        "type": "Carts",
+        "description": "Manual channel",
+        "logo": "custom.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": [],
+        "connected": "true",
+        "count": 1,
+        "is_new": 0
+    },
+    {
+        "id": 5,
+        "name": "SHOPIFY",
+        "code": "SH",
+        "type": "Carts",
+        "description": "Shopify Cart",
+        "logo": "shopify.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "unshipped,partial etc.",
+                    "type": "text"
+                },
+                "order_tags": {
+                    "code": "order_tags_to_fetch",
+                    "placeholder": "Prepaid, Urgent Order etc."
+                },
+                "cod_tags": {
+                    "code": "cod_tags_to_fetch",
+                    "placeholder": "COD, COD Confirmed etc."
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "SHOPIFY API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://jwellery002.myshopify.com without ending slash \"/\""
+                    },
+                    {
+                        "code": "api_key",
+                        "name": "API Key",
+                        "placeholder": "e.g. XXXXXXXXXXXXX",
+                        "type": "password"
+                    },
+                    {
+                        "code": "api_password",
+                        "name": "API Password",
+                        "placeholder": "e.g. XXXXXXXXXXXXX",
+                        "type": "password"
+                    },
+                    {
+                        "code": "shared_secret",
+                        "name": "Shared secret ",
+                        "placeholder": "e.g. http://jwellery002.myshopify.com without ending slash \"/\"",
+                        "type": "password"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 7,
+        "name": "WOOCOMMERCE",
+        "code": "WC",
+        "type": "Carts",
+        "description": "Woocommerce Cart",
+        "logo": "woocommerce.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "processing,on-hold etc.",
+                    "type": "text",
+                    "value": "processing"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "WOOCOMMERCE API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://example.woocommerce.com without ending slash \"/\""
+                    },
+                    {
+                        "code": "consumer_key",
+                        "name": "Consumer Key",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "consumer_secret",
+                        "name": "Consumer Secret",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 9,
+        "name": "OPENCART",
+        "code": "OC",
+        "type": "Carts",
+        "description": "OPENCART marketplace",
+        "logo": "opencart.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "Pending",
+                    "type": "text"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "OPENCART API",
+                "help": "Provide credentials which you use to log into Admin Panel.",
+                "settings": [
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://example.opencart.com without ending slash \"/\""
+                    },
+                    {
+                        "code": "public_hash",
+                        "name": "Public Hash",
+                        "placeholder": "e.g. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "private_hash",
+                        "name": "Private Hash",
+                        "placeholder": "e.g. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "oc_version",
+                        "name": "Opencart Version",
+                        "placeholder": "Select Version",
+                        "type": "select",
+                        "values": {
+                            "3.0": "Version 3.0.*",
+                            "2.3": "Version 2.3.*",
+                            "2.2": "Version 2.2.*",
+                            "2.0": "Version 2.0.*"
+                        }
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 12,
+        "name": "MAGENTO_V2",
+        "code": "MGV2",
+        "type": "Carts",
+        "description": "Magento V2 Cart",
+        "logo": "magento_v2.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "Pending, Processing etc.",
+                    "type": "text"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "MAGENTO V2 API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://jwellery002.magento.com without ending slash \"/\""
+                    },
+                    {
+                        "code": "api_key",
+                        "name": "API Password",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "api_username",
+                        "name": "API Username",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 13,
+        "name": "PRESTASHOP",
+        "code": "PS",
+        "type": "Carts",
+        "description": "Prestashop",
+        "logo": "prestashop.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": [],
+            "brand_name": {
+                "code": "brand_name",
+                "name": "Brand Name",
+                "placeholder": "Your brand name",
+                "type": "text"
+            },
+            "brand_logo": {
+                "code": "brand_logo",
+                "name": "Brand Logo",
+                "placeholder": "Your brand logo",
+                "type": "file"
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "PRESTAHSOP API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "api_key",
+                        "name": "API Key",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://api.prestahsop.com without ending slash \"/\""
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 15,
+        "name": "AMAZON_US",
+        "code": "AZUS",
+        "type": "Marketplace",
+        "description": "Amazon USA",
+        "logo": "amazon_us.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text",
+                    "value": "Amazon"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Amazon USA API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "seller_id",
+                        "name": "Merchant Id",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "mws_auth_token",
+                        "name": "MWS Auth Token",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "marketplace_id",
+                        "name": "Marketplace Id",
+                        "placeholder": "",
+                        "value": "ATVPDKIKX0DER"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 16,
+        "name": "AMAZON_UK",
+        "code": "AZUK",
+        "type": "Marketplace",
+        "description": "Amazon UK",
+        "logo": "amazon_uk.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text",
+                    "value": "Amazon"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Amazon UK API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "seller_id",
+                        "name": "Merchant Id",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "mws_auth_token",
+                        "name": "MWS Auth Token",
+                        "placeholder": "",
+                        "value": ""
+                    },
+                    {
+                        "code": "marketplace_id",
+                        "name": "Marketplace Id",
+                        "placeholder": "",
+                        "value": "A1F83G8C2ARO7P"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 19,
+        "name": "BigCommerce",
+        "code": "BC",
+        "type": "Carts",
+        "description": "BigCommerce",
+        "logo": "bigcommerce.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "Awaiting Fulfillment,Awaiting Payment",
+                    "type": "text"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "BigCommerce API",
+                "help": "Provide credentials which you use to log into Admin Panel.",
+                "settings": [
+                    {
+                        "code": "store_id",
+                        "name": "Store Id",
+                        "placeholder": "e.g. XXXXXXXXX"
+                    },
+                    {
+                        "code": "client_id",
+                        "name": "Client ID",
+                        "placeholder": "e.g. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                        "type": "password"
+                    },
+                    {
+                        "code": "access_token",
+                        "name": "Access Token",
+                        "placeholder": "e.g. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                        "type": "password"
+                    },
+                    {
+                        "code": "client_secret",
+                        "name": "Client Secret",
+                        "placeholder": "e.g. XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                        "type": "password"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 20,
+        "name": "Shiprocket Social",
+        "code": "KL",
+        "type": "Carts",
+        "description": "Shiprocket Social",
+        "logo": "kraftly.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": []
+        },
+        "auth_sample": [],
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 21,
+        "name": "Zoho_Commerce",
+        "code": "ZOHO",
+        "type": "Carts",
+        "description": "Zoho Commerce",
+        "logo": "zoho.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Connect your zoho account",
+                "help": "Authorize ShipRocket to connect with your zoho account",
+                "settings": [
+                    {
+                        "type": "button",
+                        "link": "https://accounts.zoho.in/oauth/v2/auth?response_type=code&client_id=1000.TH7SVL53H8S04022WX9AOI6UUMBQ6V&scope=ZohoCommerce.fullaccess.all,ZohoCommerce.sitesIndex.READ&redirect_uri=https://app.shiprocket.in/zoho&prompt=consent&access_type=offline",
+                        "code": "sign_in_url",
+                        "name": "Sign in using your zoho account",
+                        "country_code": 203,
+                        "value": "Connect your zoho account"
+                    },
+                    {
+                        "type": "checkbox",
+                        "options": {
+                            "Yes": 1,
+                            "No": 0
+                        },
+                        "code": "update_zero_inventory",
+                        "name": "Update zero inventory",
+                        "description": "Allowing zero inventory update will de-list the product from zoho account",
+                        "value": 0
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 22,
+        "name": "Wix Store",
+        "code": "WIX",
+        "type": "Carts",
+        "description": "Wix Store",
+        "logo": "wix.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "NOT_FULFILLED,PARTIALLY_FULFILLED",
+                    "type": "text",
+                    "value": ""
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Wix API",
+                "help": "",
+                "settings": [
+                    {
+                        "type": "button",
+                        "link": "https://apiv2.shiprocket.in/wix",
+                        "code": "sign_in_url",
+                        "name": "Sign in using Wix account",
+                        "value": "Connect your Wix account"
+                    },
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. https://wix-website.com/"
+                    },
+                    {
+                        "code": "refresh_token",
+                        "name": "Refresh Token",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 23,
+        "name": "StoreHippo",
+        "code": "HIPPO",
+        "type": "Carts",
+        "description": "Store Hippo",
+        "logo": "hippo.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "Open",
+                    "type": "text",
+                    "value": "open"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "StoreHippo API",
+                "help": "Provide credentials which you use to log into Admin Panel.",
+                "settings": [
+                    {
+                        "code": "access_key",
+                        "name": "Access Key",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. https://{storename}.storehippo.com without ending slash \"/\""
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 26,
+        "name": "Instamojo",
+        "code": "IM",
+        "type": "Carts",
+        "description": "Instamojo",
+        "logo": "IM.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Connect your Instamojo account",
+                "help": "Authorize ShipRocket to connect with your Instamojo account",
+                "settings": [
+                    {
+                        "type": "button",
+                        "link": "https://www.instamojo.com/oauth2/authorize/?scope=payments:read%20products:read%20store-inventory:read%20store-orders:read%20store-orders:write%20store-settings:read%20store-inventory:write%20user-contact:read&redirect_uri=https://apiv2.shiprocket.in/v1/external/instamojo/auth/register_user&response_type=code&client_id=57zuMANO3dlNp3I9bEpqU3UA4O59FIUXMYuixLam&state=internal",
+                        "code": "",
+                        "name": "Sign in using your Instamojo account",
+                        "value": "Connect your Instamojo account"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 27,
+        "name": "Bikayi",
+        "code": "BI",
+        "type": "Carts",
+        "description": "Bikayi marketplace integration",
+        "logo": "BI.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "Awaiting Fulfillment,Awaiting Payment etc.",
+                    "type": "text"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "KartRocket API",
+                "help": "Provide credentials which you use to log into Seller Panel.",
+                "settings": [
+                    {
+                        "code": "store_id",
+                        "name": "Merchant Id",
+                        "placeholder": "e.g. XXXXXXXXXXXXX"
+                    },
+                    {
+                        "code": "store_url",
+                        "name": "Store Url",
+                        "placeholder": "e.g. http://bikayi.co without ending slash \"/\""
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 28,
+        "name": "Ecwid",
+        "code": "ECW",
+        "type": "Carts",
+        "description": "Ecwid Marketplace integration",
+        "logo": "ecwid.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "order_status",
+                    "name": "Status to fetch",
+                    "placeholder": "PROCESSING, SHIPPED etc.",
+                    "type": "text",
+                    "value": "open"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Ecwid API",
+                "help": "Authorize Shiprocket to Connect with Your Ecwid Account",
+                "settings": [
+                    {
+                        "type": "button",
+                        "link": "https://my.ecwid.com/api/oauth/authorize?client_id=shiprocket-dev&redirect_uri=https://apiv2.shiprocket.in/v1/channels/ecwid/redirect-urlecwid/redirect-url&response_type=code&scope=public_storefront,update_catalog.read_catalog,create_catalog,update_orders,read_store_profile,read_orders&state=590",
+                        "code": "sign_in_url",
+                        "name": "Sign in using your ecwid account",
+                        "country_code": 203,
+                        "value": "Connect your ecwid account"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 29,
+        "name": "Razorpay Payment Pages",
+        "code": "RP",
+        "type": "Carts",
+        "description": "Razorpay Payment Pages",
+        "logo": "rp.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": {
+                "order_status": {
+                    "code": "",
+                    "name": "Status to fetch",
+                    "placeholder": "",
+                    "type": "text",
+                    "value": "open"
+                },
+                "brand_name": {
+                    "code": "brand_name",
+                    "name": "Brand Name",
+                    "placeholder": "Your brand name",
+                    "type": "text"
+                },
+                "brand_logo": {
+                    "code": "brand_logo",
+                    "name": "Brand Logo",
+                    "placeholder": "Your brand logo",
+                    "type": "file"
+                }
+            }
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Razorpay API",
+                "help": "Authorize Shiprocket to Connect with Your Razorpay Account",
+                "settings": [
+                    {
+                        "type": "button",
+                        "link": "https://auth.razorpay.com/token?client_id=It5bwwh5LsZPKd&client_secret=knxdBI8mtDv4QCx2eBKVZIM0&grant_type=authorization_code&redirect_uri=https://apiv2.shiprocket.in/v1/channels/razorpay/redirect-url&code=abcd&mode=test",
+                        "code": "sign_in_url",
+                        "name": "Sign in using your Razorpay account",
+                        "country_code": 203,
+                        "value": "Connect your Razorpay account"
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 0
+    },
+    {
+        "id": 32,
+        "name": "Omuni",
+        "code": "OM",
+        "type": "Marketplace",
+        "description": "Omuni Market Place Integration",
+        "logo": "omuni.png",
+        "settings_sample": {
+            "name": "Channels Settings",
+            "help": "",
+            "settings": []
+        },
+        "auth_sample": {
+            "api_info": {
+                "name": "Omuni",
+                "help": "Provide credentials which you use to log into Admin Panel.",
+                "settings": [
+                    {
+                        "code": "omuni_username",
+                        "name": "Omuni Username",
+                        "value": "",
+                        "placeholder": "Please Enter Username"
+                    },
+                    {
+                        "code": "omuni_password",
+                        "name": "Omuni Password",
+                        "placeholder": "Please Enter Password",
+                        "type": "password"
+                    },
+                    {
+                        "code": "omuni_api_token",
+                        "name": "Omuni API Token",
+                        "placeholder": "Please Enter Omuni API Token"
+                    },
+                    {
+                        "code": "brand_name",
+                        "name": "Brand Name",
+                        "placeholder": "Please Enter Brand Name."
+                    }
+                ]
+            }
+        },
+        "connected": "false",
+        "is_new": 1
+    }
+]
